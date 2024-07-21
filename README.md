@@ -42,3 +42,9 @@ ros2 run bt_sample publisher_node
 ```
 ros2 run bt_sample sample_no03
 ```
+
+## 備考
+ros2_ws/install/bt_sample/share/bt_sample/config
+上記のパスにTreeのxmlを配置しないと動作しない。。。
+
+自動配置するように今後対応予定
