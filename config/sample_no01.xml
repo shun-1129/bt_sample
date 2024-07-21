@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root BTCPP_format="4">
+  <BehaviorTree ID="SampleNo01">
+    <Display in_text="{text_data}"/>
+  </BehaviorTree>
+
+  <!-- Description of Node Models (used by Groot) -->
+  <TreeNodesModel>
+    <Action ID="Display"
+            editable="true">
+      <input_port name="in_text"/>
+    </Action>
+  </TreeNodesModel>
+
+</root>

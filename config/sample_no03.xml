@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root BTCPP_format="4">
+  <BehaviorTree ID="SampleNo03">
+    <Sequence>
+      <FullWordCountJudge in_text="{text_data}"/>
+      <Sequence>
+        <HalfWordCountJudg in_text="{text_data}"/>
+        <Display in_text="{text_data}"/>
+        <SendText in_text="{text_data}"/>
+      </Sequence>
+    </Sequence>
+  </BehaviorTree>
+
+  <!-- Description of Node Models (used by Groot) -->
+  <TreeNodesModel>
+    <Action ID="Display"
+            editable="true">
+      <input_port name="in_text"/>
+    </Action>
+    <Action ID="FullWordCountJudge"
+            editable="true">
+      <input_port name="in_text"/>
+    </Action>
+    <Action ID="HalfWordCountJudg"
+            editable="true">
+      <input_port name="in_text"/>
+    </Action>
+    <Action ID="SendText"
+            editable="true">
+      <input_port name="in_text"/>
+    </Action>
+  </TreeNodesModel>
+
+</root>

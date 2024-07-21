@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root BTCPP_format="4" project_name="Project">
+    <include path="config/sample_no01.xml"/>
+    <include path="config/sample_no02.xml"/>
+    <include path="config/sample_no03.xml"/>
+    <!-- Description of Node Models (used by Groot) -->
+    <TreeNodesModel>
+        <Action ID="Display" editable="true">
+            <input_port name="in_text"/>
+        </Action>
+        <Action ID="FullWordCountJudge" editable="true">
+            <input_port name="in_text"/>
+        </Action>
+        <Action ID="HalfWordCountJudg" editable="true">
+            <input_port name="in_text"/>
+        </Action>
+        <Action ID="SendText" editable="true">
+            <input_port name="in_text"/>
+        </Action>
+    </TreeNodesModel>
+</root>

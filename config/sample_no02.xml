@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root BTCPP_format="4">
+  <BehaviorTree ID="SampleNo02">
+    <Sequence>
+      <FullWordCountJudge in_text="{text_data}"/>
+      <Display in_text="{text_data}"/>
+    </Sequence>
+  </BehaviorTree>
+
+  <!-- Description of Node Models (used by Groot) -->
+  <TreeNodesModel>
+    <Action ID="Display"
+            editable="true">
+      <input_port name="in_text"/>
+    </Action>
+    <Action ID="FullWordCountJudge"
+            editable="true">
+      <input_port name="in_text"/>
+    </Action>
+  </TreeNodesModel>
+
+</root>
