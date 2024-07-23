@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root BTCPP_format="4">
+  <BehaviorTree ID="ServoBT">
+    <Fallback>
+      <Sequence>
+        <ReceiveData out_data="{data}"/>
+        <CallTest in_data="{data}"/>
+      </Sequence>
+      <ContinueOnFailure/>
+    </Fallback>
+  </BehaviorTree>
+
+  <!-- Description of Node Models (used by Groot) -->
+  <TreeNodesModel>
+    <Action ID="CallTest"
+            editable="true">
+      <input_port name="in_data"/>
+    </Action>
+    <Action ID="ContinueOnFailure"
+            editable="true"/>
+    <Action ID="ReceiveData"
+            editable="true">
+      <output_port name="out_data"/>
+    </Action>
+  </TreeNodesModel>
+
+</root>
